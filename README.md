@@ -1,10 +1,9 @@
 # estudo-j2ee
-Códigos para Estudo J2EE.
+<h2> Códigos para Estudo do J2EE. </h2>
+<h2> Os Códigos são do Livro <b> Java para a Web com Servlets, JSP e EJB </b>  </h2>
+<h2> Escrito por <b> Budi Kurniawan </b> </h2>
+<h2> Editora <b> CIÊNCIA MODERNA </b> </h2>
 
-Códigos do Livro Java para a Web com Servlets, JSP e EJB
-Escrito por Budi Kurniawan
-Editora CIÊNCIA MODERNA
+<h4> Cada package é referente a um capítulo do livro e os comentários das coisas essenciais para entender. </h4>
 
-Cada package é referente a um capítulo do livro e os comentários das coisas essenciais para entender.
-
-Capítulo 1: <b> A Tecnologia Servlet </b>
+<h5> <b> Capítulo 1 </b>: A Tecnologia Servlet </h5>
