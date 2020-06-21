@@ -1,27 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-  <display-name>estudo-j2ee</display-name>
-  
-  <!-- CRIA O SERVLET COM O NOME E O NOME DA CLASSE (PACOTE + NOME CLASSE) -->
-  <servlet>
-    <servlet-name>TestingServlet</servlet-name>
-    <servlet-class>capitulo1.TestingServlet</servlet-class>
-  </servlet>
-  
-  <!-- DEPOIS QUE DECLAROU O SERVLET ACIMA, AQUI VOCÊ MAPEIA ELE EM QUAL ENDPOINT PARA SER ACESSADO NA URL -->
-  <servlet-mapping> 
- 	 <servlet-name>TestingServlet</servlet-name> 
- 	 <url-pattern>/</url-pattern> 
-  </servlet-mapping>
-  
-  <!-- LISTA DE ARQUIVOS INICIAS -->
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
-  
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+
+	<!-- NOME DO PROJETO, ENTÃO A URL VAI SER: localhost:8080/estudo-j2ee -->
+	<!-- PARA ACESSAR OS SERVLETS: localhost:8080/estudo-j2ee/URL_PATTERN_DO_SERVLET_QUE_DESEJA_ACESSAR -->
+	<display-name>estudo-j2ee</display-name>
+
+	<!-- DECLARAÇÃO DOS SERVLETS -->
+	<!-- CRIA O SERVLET COM O NOME E O NOME DA CLASSE (PACOTE + NOME CLASSE) -->
+
+	<!-- INÍCIO CAPÍTULO 1 -->
+	<servlet>
+		<servlet-name>TestingServlet</servlet-name>
+		<servlet-class>capitulo1.TestingServlet</servlet-class>
+	</servlet>
+
+	<!-- FIM CAPÍTULO 1 -->
+
+	<!-- INÍCIO CAPITULO 2 -->
+	<servlet>
+		<servlet-name>PrimitiveServlet</servlet-name>
+		<servlet-class>capitulo2.PrimitiveServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ConfigDemoServlet</servlet-name>
+		<servlet-class>capitulo2.ConfigDemoServlet</servlet-class>
+		<!-- Declara os parâmetros inicias para ConfigDemoServlet -->
+		<init-param>
+			<param-name>adminEmail</param-name>
+			<param-value>admin@gmail.com</param-value>
+		</init-param>
+		<init-param>
+			<param-name>adminNumber</param-name>
+			<param-value>55 (99) 99999-9999</param-value>
+		</init-param>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ReserveConfigServlet</servlet-name>
+		<servlet-class>capitulo2.ReserveConfigServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AttributeSetterServlet</servlet-name>
+		<servlet-class>capitulo2.AttributeSetterServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>DisplayAttributeServlet</servlet-name>
+		<servlet-class>capitulo2.DisplayAttributeServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>RequestDemoServlet</servlet-name>
+		<servlet-class>capitulo2.RequestDemoServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ResponseDemoServlet</servlet-name>
+		<servlet-class>capitulo2.ResponseDemoServlet</servlet-class>
+	</servlet>
+
+	<!-- FIM CAPÍTULO 2 -->
+
+
+
+	<!-- MAPEAMENTO DOS SERVLETS -->
+	<!-- DEPOIS QUE DECLAROU O SERVLET ACIMA, AQUI VOCÊ MAPEIA ELE EM QUAL ENDPOINT 
+		PARA SER ACESSADO NA URL -->
+	<servlet-mapping>
+		<servlet-name>TestingServlet</servlet-name>
+		<url-pattern>/servlet/testing</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>PrimitiveServlet</servlet-name>
+		<url-pattern>/servlet/primitive</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ConfigDemoServlet</servlet-name>
+		<url-pattern>/servlet/configDemoServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ReserveConfigServlet</servlet-name>
+		<url-pattern>/servlet/reserveConfigServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AttributeSetterServlet</servlet-name>
+		<url-pattern>/servlet/attributeSetterServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DisplayAttributeServlet</servlet-name>
+		<url-pattern>/servlet/displayAttributeServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>RequestDemoServlet</servlet-name>
+		<url-pattern>/servlet/requestDemoServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>ResponseDemoServlet</servlet-name>
+		<url-pattern>/servlet/responseDemoServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- LISTA DE ARQUIVOS INICIAS -->
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
 </web-app>
