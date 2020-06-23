@@ -75,6 +75,17 @@
 	</servlet>
 
 	<!-- FIM CAPÍTULO 2 -->
+	
+	
+	
+	
+	<!-- CAPÍTULO 3 -->
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>capitulo3.RegisterServlet</servlet-class>
+	</servlet>
+	
+	<!-- FIM CAPÍTULO 3 -->
 
 
 
@@ -131,6 +142,12 @@
 		<servlet-name>SingleThreadedServlet</servlet-name>
 		<url-pattern>/servlet/singleThreadedServlet</url-pattern>
 	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/servlet/registerServlet</url-pattern>
+	</servlet-mapping>
+	
 	
 	<!-- LISTA DE ARQUIVOS INICIAS -->
 	<welcome-file-list>
