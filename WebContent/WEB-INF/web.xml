@@ -80,9 +80,15 @@
 	
 	
 	<!-- CAPÍTULO 3 -->
+	
 	<servlet>
 		<servlet-name>RegisterServlet</servlet-name>
 		<servlet-class>capitulo3.RegisterServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>HttpRequestDemoServlet</servlet-name>
+		<servlet-class>capitulo3.HttpRequestDemoServlet</servlet-class>
 	</servlet>
 	
 	<!-- FIM CAPÍTULO 3 -->
@@ -146,6 +152,11 @@
 	<servlet-mapping>
 		<servlet-name>RegisterServlet</servlet-name>
 		<url-pattern>/servlet/registerServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>HttpRequestDemoServlet</servlet-name>
+		<url-pattern>/servlet/httpRequestDemoServlet</url-pattern>
 	</servlet-mapping>
 	
 	
