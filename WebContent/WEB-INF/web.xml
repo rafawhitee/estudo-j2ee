@@ -68,6 +68,11 @@
 		<servlet-name>SimpleServlet</servlet-name>
 		<servlet-class>capitulo2.SimpleServlet</servlet-class>
 	</servlet>
+	
+	<servlet>
+		<servlet-name>SingleThreadedServlet</servlet-name>
+		<servlet-class>capitulo2.SingleThreadedServlet</servlet-class>
+	</servlet>
 
 	<!-- FIM CAPÍTULO 2 -->
 
@@ -120,6 +125,11 @@
 	<servlet-mapping>
 		<servlet-name>SimpleServlet</servlet-name>
 		<url-pattern>/servlet/simpleServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>SingleThreadedServlet</servlet-name>
+		<url-pattern>/servlet/singleThreadedServlet</url-pattern>
 	</servlet-mapping>
 	
 	<!-- LISTA DE ARQUIVOS INICIAS -->
